@@ -32,3 +32,16 @@ const elfi = [
   { nome: "Buddy", oreLavorate: 8 },
   { nome: "SamBem", oreLavorate: 2 }
 ];
+
+const categorizzaElfi = (elfi) => {
+  return elfi.map(elfo => {
+    const categorizzaElfi = (elfi) => {
+      return elfi.map(elfo => {
+        return {
+          ...elfo,
+          carattere: elfo.oreLavorate < 5 ? "pigro" : "operoso" 
+        };
+      });
+    };
+  });
+};
