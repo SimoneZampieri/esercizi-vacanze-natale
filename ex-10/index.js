@@ -11,3 +11,7 @@
 */
 
 const velocitaRenne = [12, 1, 7, 10, 16, 5];
+
+const renneStanche = (velocitaRenne) => {
+  return velocitaRenne.map(velocita => velocita < 10 ? true : false);
+};
