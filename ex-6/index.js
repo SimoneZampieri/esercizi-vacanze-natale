@@ -15,3 +15,17 @@
 */
 
 const palline = ["rosso", "blu", "rosso", "verde", "rosso", "giallo", "blu"];
+
+const contaPallinePerColore = (palline) => {
+  let contatore = {};
+  palline.forEach(element => {
+    if (contatore[element]) {
+      contatore[element]++;
+    } else {
+      contatore[element] = 1;
+    }
+  });
+  return contatore;
+};
+
+
