@@ -33,3 +33,12 @@ const citta = [
   "Candynia",
   "Luciaville"
 ];
+
+const aggiungiCitta = (citta, nuovaCitta) => {
+ 
+  if (!citta.includes(nuovaCitta)) {
+  
+    citta.push(nuovaCitta);
+  }
+  return citta;
+};
